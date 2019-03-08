@@ -4,10 +4,10 @@ Dans le cadre du cours de projets de fin d'études, j'ai créé une boutique en 
 Si vous voulez utiliser cette API pour quelconque raison, voici son fonctionnement.
 
 ## 1) Créer la base de données MySQL
-Le fichier _bdd-boutique.sql_ contient le script qui créera votre base de données. Il suffit de l'insérer dans PhpMyAdmin, ou autre logiciel similaire.
+Le fichier _bdd-boutique.sql_ contient le script qui créera votre base de données. Il suffit de l'insérer dans PhpMyAdmin, ou autres logiciels similaires.
 
 ## 2) Configurer l'API
-Dans le dossier _config_ se trouve la classe _Database_. C'est grâce à cette classe que l'API réussi à communiquer avec la base de données.
+Dans le dossier _config_ se trouve la classe _Database_. C'est grâce à cette classe que l'API réussit à communiquer avec la base de données.
 
 Les modifications à apporter à ce fichier:
 ~~~~
@@ -18,16 +18,16 @@ private $sMotDePasse = ""; // Mot de passe de l'utilisateur`
 ~~~~
 
 ## 3) Voilà, tout est prêt!
-Ce n'est pas plus compliquer que ça! Tout est prêt à être utilisé.
+Ce n'est pas plus compliqué que ça! Tout est prêt à être utilisé.
 
 
 ## Effectuer des requêtes
-L'API retourne du JSON peut importe si la requête contient une erreur.
+L'API retourne du JSON peu importe si la requête contient une erreur.
 
 Pour effectuer une requête, voici le structure:
 `http(s):// URL_OU_API_EST_HEBERGEE / DOSSIER_MENANT_VERS_API / LA_TABLE_DÉSIRÉE / TYPE_DE_REQUÊTE.php`
 
-Note : Le nom des classes est le même que celle des tables de la base de données.
+Note : Les noms des classes sont le même que celle des tables de la base de données.
 
 Exemple :
 `http://localhost:8080/boutique/api/produits/rechercherTous.php`
@@ -234,7 +234,7 @@ Voici les listes des classes disponibles.
    5) RechercherTousParCateg
 
   ### Utilisateur
-  La classe Utilisateur contient les utilisateurs inscrit pour faire des achats dans la boutique
+  La classe Utilisateur contient les utilisateurs qui sont inscrits pour faire des achats dans la boutique
       
    #### Paramètres
    * `idUtilisateur // Id de l'utilisateur `
